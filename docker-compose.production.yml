@@ -10,7 +10,7 @@ services:
     ports:
       - "80:80"
     networks:
-      - blog
+      - morgado
 
   app:
     restart: always
@@ -36,11 +36,11 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     networks: 
-      - cajita_api
+      - morgado
 
 volumes:
   postgres-data:
 
 networks:
-  blog:
+  morgado:
 
